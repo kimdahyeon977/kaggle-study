@@ -68,7 +68,7 @@ Github 주소 : https://github.com/JunSeokCheon/kaggle-study
 |4  (2022/04/25(월))|🚩모델링 중간 점검 | pycaret 사용해보기 , 쓸모없는 변수 골라내기
 |5  (2022/05/09(월))|🚩제출해보고 결과 확인 | 이상치 처리, 결측값 처리, 데이터 타입변경 좀 더 세심하게 변경하였음. , 파생변수 더 많이 생성 , 앙상블 모델 (Extra tree, Bagging, Gradient) 사용
 |6  (2022/05/16(월))|🚩 다음 프로젝트 TOPIC 정하기 , CV 와 NLP공부해오기 | 데이콘 수화 MNIST 분류 대회로 다수결로 결정 https://dacon.io/competitions/official/235896/overview/description
-|7  (2022/05/21(토))|🚩||
+|7  (2022/05/23(월))|🚩 수화 이미지 train set : 0.83 / test set : 0.16 으로 과적합 심함. || 모델을 좀 더 가볍게 성능 더 올리기, submission해보기
 |8  (2022/05/28(토))|🚩||
 
 
@@ -217,3 +217,14 @@ x축을 년도로 놓고 히트맵으로 그리기
 
 **- 결론**  
 1. 다음 시간까지 엘리스 학습 내용을 바탕으로 모델링 해볼 수 있는데까지 최대한 해오기
+
+<h2>6주차</h2>
+● 2022/05/23(월)
+
+**- 학습 내용**
+1. 과적합이 너무 심하게 일어남. 이미지 화질을 28by28로 줄이기로 결정
+2. test set의 정확도가 0.16밖에 나오지 않는데 split을 할때 버그를 발견함. 직접 데이터를 split하지 말고 keras validation_split사용하기!
+3. validation_split에서 자꾸 오류발생 conv2d에서 array형태를 못 받아오는 것같음. tensor로 형식 바꾸거나 Dense로 바꾸기
+
+**- 결론**  
+1. 다음 시간까지 submission까지 해보기
