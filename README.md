@@ -2,7 +2,7 @@
  김다현, 천준석, 소범기, 권소현, 신가현, 홍일도, 이유진, 정현정
 - - -
 <h1>Intro</h1> 
-Github 주소 : https://github.com/JunSeokCheon/kaggle-study
+
 
 - - -
  <h2>:exclamation:Master branch가 아닌 dev branch에서 팀원들의 코드와 진행 사항을 알 수 있습니다!!!!</h2>  
